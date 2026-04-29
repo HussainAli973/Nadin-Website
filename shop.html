@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDG 3 | Shop for a Cause</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <i class="fas fa-heartbeat"></i>
+        <span>SDG<span class="logo-highlight">3</span> Initiative</span>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="donation.html" class="nav-link">Donation</a></li>
+          <li><a href="shop.html" class="nav-link active-nav">Shop</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="shop-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">merch with a mission</span>
+          <h2>Shop to Support <span style="color:#5c9f44;">Good Health</span></h2>
+          <div class="divider"></div>
+          <p class="section-sub">100% of profits fund SDG 3 health programs worldwide.</p>
+        </div>
+
+        <div class="shop-grid">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-image">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            <h3>SDG 3 Unity Tee</h3>
+            <p class="product-desc">Organic cotton, unisex. "Health for All" print.</p>
+            <div class="product-price">8.99 BD</div>
+            <button class="btn btn-primary add-to-cart" data-name="SDG 3 Unity Tee" data-price="29.99">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-image">
+              <i class="fas fa-water"></i>
+            </div>
+            <h3>Eco Water Bottle</h3>
+            <p class="product-desc">Stainless steel, BPA-free. 1 tree planted per sale.</p>
+            <div class="product-price">2.99 BD</div>
+            <button class="btn btn-primary add-to-cart" data-name="Eco Water Bottle" data-price="19.99">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-image">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <h3>Health Advocate Tote</h3>
+            <p class="product-desc">Reusable, cotton canvas. Perfect for groceries.</p>
+            <div class="product-price">14.99 BD</div>
+            <button class="btn btn-primary add-to-cart" data-name="Health Advocate Tote" data-price="14.99">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-image">
+              <i class="fas fa-head-side-medical"></i>
+            </div>
+            <h3>Wellness Hoodie</h3>
+            <p class="product-desc">Cozy fleece, SDG 3 logo on chest.</p>
+            <div class="product-price">10.99 BD</div>
+            <button class="btn btn-primary add-to-cart" data-name="Wellness Hoodie" data-price="49.99">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-image">
+              <i class="fas fa-hand-holding-heart"></i>
+            </div>
+            <h3>Donation Pin Set</h3>
+            <p class="product-desc">3 enamel pins: heart, stethoscope, earth.</p>
+            <div class="product-price">9.99 BD</div>
+            <button class="btn btn-primary add-to-cart" data-name="Donation Pin Set" data-price="9.99">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-image">
+              <i class="fas fa-mug-hot"></i>
+            </div>
+            <h3>Health Heroes Mug</h3>
+            <p class="product-desc">Ceramic, 11oz. "Care for All" design.</p>
+            <div class="product-price">3.99 BHD</div>
+            <button class="btn btn-primary add-to-cart" data-name="Health Heroes Mug" data-price="12.99">
+              <i class="fas fa-shopping-cart"></i> Add to Cart
+            </button>
+          </div>
+        </div>
+
+        <!-- Cart summary (optional) -->
+        <div class="cart-summary">
+          <h3><i class="fas fa-shopping-basket"></i> Your Cart</h3>
+          <ul id="cart-items"></ul>
+          <p><strong>Total:<span id="cart-total">0.00</span> BD</strong></p>
+          <button id="checkout-btn" class="btn btn-primary">Checkout <i class="fas fa-heart"></i></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <i class="fas fa-heartbeat"></i> SDG3 Initiative — Health for all
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="donation.html">Donation</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+    <div class="team-credits">
+      <p><strong>Project Team</strong></p>
+      <div class="team-members">
+        <span>Nadin Ayyah - Project Lead & Coordinator & Design</span>
+        <span>Marwa Thani - Web Developer</span>
+        <span>Aysha Aish - Content Writer</span>
+        <span>Seddiqa Sharaf - Content Writer</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 SDG 3 Good Health & Well-being Project | Advancing universal health coverage</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
